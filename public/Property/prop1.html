@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prop.css">
+</head>
+<body>
+
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+
+                <div class="slider">
+                    <div class="product">
+
+                        <img src="../images/product/p1-1.jpg" alt="" onclick="clickme(this)">
+                        <img src="../images/product/p1-2.jpg" alt="" onclick="clickme(this)">
+                        <img src="../images/product/p1-3.jpg" alt="" onclick="clickme(this)">
+                        <img src="../images/product/p1-4.jpg" alt="" onclick="clickme(this)">
+                        <img src="../images/product/p1-5.jpg" alt="" onclick="clickme(this)">
+
+                    </div>
+                    <div class="preview">
+                        <img src="../images/list/p-1.png" id="imagebox" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="content">
+                    <p class="brand">Type: House</p>
+                    <h2>Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...</h2>
+
+                    <p class="price">price: 750000</p>
+                    <p class="price">tenure: Freehold</p>
+                    <p class="price">Bedrooms: 3</p>
+                    <p class="price">location: Petts Wood Road, Petts Wood, Orpington</p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to favorite</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+
+    </script>
+
+
+
+</body>
+</html>
